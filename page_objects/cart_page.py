@@ -51,6 +51,7 @@ class CartPage(BasePage):
         return self._is_invisible(self.__gift_wrapping_checkbox)
 
     def click_back_to_shop_button(self):
+        self._is_located(self.__back_to_shop_button)
         self._click_with_js_execute(self.__back_to_shop_button)
         return self
 
