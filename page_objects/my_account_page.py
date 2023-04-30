@@ -55,7 +55,7 @@ class MyAccountPage(BasePage):
         return self
 
     def click_confirm_logout(self):
-        self._click(self.__confirm_logout_button)
+        self._click_with_js_execute(self.__confirm_logout_button)
         return self
 
     def is_my_contact_data_button_invisible(self):
