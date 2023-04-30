@@ -32,11 +32,11 @@ def create_browser(env, request):
     driver.maximize_window()
     driver.get(env.app_url)
     yield driver
-    if request.node.rep_call.failed:
-        with suppress(Exception):
-            allure.attach(driver.get_screenshot_as_png(),
-                          name=request.function.__name__,
-                          attachment_type=allure.attachment_type.PNG)
+    # if request.node.rep_call.failed:
+    #     with suppress(Exception):
+    #         allure.attach(driver.get_screenshot_as_png(),
+    #                       name=request.function.__name__,
+    #                       attachment_type=allure.attachment_type.PNG)
     driver.quit()
 
 

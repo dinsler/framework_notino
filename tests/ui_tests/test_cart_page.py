@@ -34,5 +34,5 @@ def test_click_back_to_shop_button(open_cart_page):
 @pytest.mark.regression
 def test_click_order_button(open_cart_page):
     cart_page = open_cart_page
-    order_steps = cart_page.select_eco_wrapping_checkbox().click_order_button()
+    order_steps = cart_page.click_order_button()
     assert order_steps.is_order_steps_chain_displayed(), 'Order steps was not displayed'
