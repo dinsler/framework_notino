@@ -1,0 +1,14 @@
+{
+  "app_url": "https://www.notino.ua/",
+  "email": "bananaha04@gmail.com",
+  "password": "asdfghjkl2A",
+  "invalid_email":  "bfgmdlsm04@gmail.com",
+  "invalid_password": "dskmfvmfs",
+  "browser_id": 1,
+  "search_item": "cabernet",
+  "invalid_search_item": "__________________",
+  "username": "Margarita",
+  "invalid_username": "_________________=/",
+  "invalid_discount": "jnzldfj",
+  "base_api_url": " https://rickandmortyapi.com/api"
+}
