@@ -1,4 +1,5 @@
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.wait import WebDriverWait
 
 from utilities.decorators import allure_step
 from utilities.web_ui.base_page import BasePage
@@ -8,6 +9,7 @@ from utilities.web_ui.base_page import BasePage
 class CartPage(BasePage):
     def __init__(self, driver):
         super().__init__(driver)
+        self.__wait = WebDriverWait(self.driver, 13, 5)
 
     __cart_page = (By.XPATH, '//div[@id="app"]//h1')
     __remove_product_from_cart_button = (By.XPATH, '//a[@title="видалити продукт"]')
